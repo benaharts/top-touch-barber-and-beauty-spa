@@ -24,8 +24,12 @@
         <a href="contact.html">Contact Us</a>
     </nav>
 
+   <div class="menu-toggle" id="menu-toggle">
+     <span></span> 
+     <span></span> 
+     <span></span> 
+    </div>
 </header>
-       
 
 <!-- SERVICES HERO SECTION -->
 <section class="services-page-hero">
@@ -460,9 +464,14 @@
 <div class="footer-bottom">
     <p>&copy; 2026 Top Touch Barber & Beauty Spa. All Rights Reserved.</p>
 </div>
-
-
 </footer>
-
     </body>
+   <script>
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+    });
+</script>
     </html>

@@ -23,7 +23,11 @@
         <a href="services.html">Services</a>
         <a href="contact.html">Contact Us</a>
     </nav>
-
+<div class="menu-toggle" id="menu-toggle">
+     <span></span> 
+     <span></span> 
+     <span></span> 
+    </div>
 </header>
 <section class="hero-slider">
 
@@ -366,5 +370,12 @@ slider.addEventListener("mouseenter", () => {
 slider.addEventListener("mouseleave", startSlider);
 
 startSlider();
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.getElementById("nav-links");
+
+    toggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+    });
 </script>
+
 </html>
