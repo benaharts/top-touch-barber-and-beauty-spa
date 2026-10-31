@@ -2174,7 +2174,25 @@ padding: 50px 6%;
 
 }
 
+@media (max-width: 768px) {
 
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: black;
+        padding: 20px;
+        gap: 20px;
+        z-index: 9999;
+    }
+}
 
 
 
